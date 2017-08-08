@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nss Upload details </title>
+</head>
+<body>
+hello
+<form method='post' enctype="multiform/form-data">
+	{% csrf_token %}
+	{{ form.title}}
+	<br>
+	{{ form.description }}
+</form>
+</body>
+</html>
