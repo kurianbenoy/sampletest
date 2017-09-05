@@ -1,58 +1,17 @@
-﻿{% load static %}
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Free Education Template</title>
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
-    <!-- FONT AWESOME CSS -->
-<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
-     <!-- FLEXSLIDER CSS -->
-<link href="assets/css/flexslider.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE CSS -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" />   
+﻿{% extends 'base.html' %}
 
-<link href="{% static 'css/pogo-slider.min.css' %}" rel="stylesheet" type="text/css" media="all" />
-  <!-- Google  Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
-</head>
-<body >
-   
- <div class="n}avbar navbar-inverse navbar-fixed-top " id="menu">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/logo180-50.png" alt=""  /></a>
-            </div>
-            <div class="navbar-collapse collapse move-me">
-                <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="#home">HOME</a></li>
-                     <li><a href="#features-sec">FEATURES</a></li>
-                    <li><a href="#faculty-sec">FACULTY</a></li>
-                     <li><a href="#course-sec">COURSES</a></li>
-                     <li><a href="#contact-sec">CONTACT</a></li>
-                </ul>
-            </div>
-           
-        </div>
-    </div>
-      <!--NAVBAR SECTION END-->
+{% block title %}
+Home
+{% endblock %}
 
+{% block body %}     
   <div class="pogoSlider" id="js-main-slider">
-    <div class="pogoSlider-slide" data-transition="barRevealDown" data-duration="1000"  style="background-image:url(images/banner1.jpg);">
+    <div class="pogoSlider-slide" data-transition="barRevealDown" data-duration="1000"  style="background-image:url(images/n1.jpg);">
       <div class="pogoSlider-slide-element">
         <h3>Lecture  - Designed For Education</h3>
       </div>
     </div>
-    <div class="pogoSlider-slide" data-transition="barRevealDown" data-duration="1000"  style="background-image:url(images/banner2.jpg);">
+    <div class="pogoSlider-slide" data-transition="barRevealDown" data-duration="1000"  style="background-image:url(images/spss.jpg);">
       <div class="pogoSlider-slide-element">
         <h3>Lecture - Free Education</h3>
       </div>
@@ -71,7 +30,7 @@
 
 
 
-     <!--   <div class="home-sec" id="home" >
+       <div class="home-sec" id="home" >
            <div class="overlay">
  <div class="container">
            <div class="row text-center " >
@@ -81,7 +40,7 @@
                 <div class="flexslider set-flexi" id="main-section" >
                     <ul class="slides move-me">
                         <!-- Slider 01 -->
-                       <!-- <!-- <!--  <li>
+                        <li>
                               <h3>Delivering Quality Education</h3>
                            <h1>THE UNIQUE METHOD</h1>
                             <a  href="#features-sec" class="btn btn-info btn-lg" >
@@ -90,11 +49,11 @@
                              <a  href="#features-sec" class="btn btn-success btn-lg" >
                                 FEATURE LIST
                             </a>
-                        <>
-                        !-- End Slider 01
+                        
+                        <!-- !-- End Slider 01 -->
                         
                         <!-- Slider 02 -->
-                <!--         <li>
+                        <li>
                             <h3>Delivering Quality Education</h3>
                            <h1>UNMATCHED APPROACH</h1>
                              <a  href="#features-sec" class="btn btn-primary btn-lg" >
@@ -103,11 +62,11 @@
                              <a  href="#features-sec" class="btn btn-danger btn-lg" >
                                 FEATURE LIST
                             </a>
-                        </li> -->
-                        <!-- End Slider 02 -->
+                        </li>
+                         <!-- End Slider 02 -->
                         
-                        <!-- Slider 03 -->
-                      <!--   <li>
+                         <!-- Slider 03 -->
+                         <li>
                             <h3>Delivering Quality Education</h3>
                            <h1>AWESOME FACULTY PANEL</h1>
                              <a  href="#features-sec" class="btn btn-default btn-lg" >
@@ -116,22 +75,17 @@
                              <a  href="#features-sec" class="btn btn-info btn-lg" >
                                 FEATURE LIST
                             </a>
-                        </li> -->
-                        <!-- End Slider 03
+                        </li>
+                        <!-- End Slider 03 -->
                     </ul>
-                </div>
-                   
-     
-              
-              
+                </div>      
             </div>
-                
                </div>
                 </div>
            </div>
            
-       </div>  -->
-       <!--HOME SECTION END-->   
+       </div> 
+       <!-- HOME SECTION END    -->
     <div  class="tag-line" >
          <div class="container">
            <div class="row  text-center" >
@@ -144,7 +98,7 @@
              </div>
         
     </div>
-    <!--HOME SECTION TAG LINE END-->   
+    <!-- HOME SECTION TAG LINE END    -->
          <div id="features-sec" class="container set-pad" >
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
@@ -158,7 +112,7 @@
                  </div>
 
              </div>
-             <!--/.HEADER LINE END--> -->
+             <!-- /.HEADER LINE END -->
 
 
             <div class="row" >
@@ -210,7 +164,7 @@
                  
                </div>
              </div>
- <!--    FEATURES SECTION END -->
+    <!-- FEATURES SECTION END  -->
     <div id="faculty-sec" >
     <div class="container set-pad">
              <div class="row text-center">
@@ -225,9 +179,9 @@
                  </div>
 
              </div>
-             <!-- /.HEADER LINE END -->
+             <!-- /.HEADER LINE END  -->
 
-           <div class="row" >
+           <!-- <div class="row" >
            
                
                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
@@ -272,8 +226,8 @@
                  
                </div>
              </div>
-        </div>
-    FACULTY SECTION END
+        </div> -->
+    <!-- FACULTY SECTION END -->
       <div id="course-sec" class="container set-pad">
              <div class="row text-center">
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
@@ -287,7 +241,7 @@
                  </div>
 
              </div>
-             <!--/.HEADER LINE END-->
+             <!-- /.HEADER LINE END -->
 
  
            <div class="row set-row-pad" >
@@ -356,7 +310,7 @@
                  
                </div>
              </div>
-      <!-- COURSES SECTION END -->
+       <!-- COURSES SECTION END -->
      <div id="contact-sec"   >
            <div class="overlay">
  <div class="container set-pad">
@@ -373,7 +327,7 @@
 
              </div>
              <!-- /.HEADER LINE END -->
-            <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
+            <!-- <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
            
                
                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
@@ -393,12 +347,6 @@
 
                     </form>
                 </div>
-
-                   
-     
-              
-              
-                
                </div>
                 </div>
           </div> 
@@ -431,24 +379,15 @@
 
 
                 </div>
-                 </div>
-     <!-- CONTACT SECTION END -->
+                 </div> -->
+     <!-- CONTACT SECTION END  -->
     <div id="footer">
           &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
-    </div> 
-     <!-- FOOTER SECTION END-->
-   
-    <!--  Jquery Core Script -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!--  Core Bootstrap Script -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!--  Flexslider Scripts --> 
-         <script src="assets/js/jquery.flexslider.js"></script>
-     <!--  Scrolling Reveal Script -->
-    <script src="assets/js/scrollReveal.js"></script>
-    <!--  Scroll Scripts --> 
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <!--  Custom Scripts --> 
-         <script src="assets/js/custom.js"></script>
-</body>
-</html>
+    </div>
+    
+{% endblock %} 
+    
+     <!-- FOOTER SECTION END -->
+
+
+

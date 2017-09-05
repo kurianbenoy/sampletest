@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html >
+<head>
+  <!--   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+ -->    <title>{% block title %} {% endblock %} </title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <!-- FONT AWESOME CSS -->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+     <!-- FLEXSLIDER CSS -->
+    <link href="assets/css/flexslider.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />   
+
+    <link href="{% static 'css/pogo-slider.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <!-- Google  Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+{% block head %}  {% endblock %}
+</head>
+<body >
+  {% block body %}    
+  <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar">HELLO</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#home">DEPARTMENT</a></li>
+                     <li><a href="#NSS">NSS</a></li>
+                    <li><a href="#faculty-sec">SPSS</a></li>
+                     <li><a href="#course-sec">HOME</a></li>
+                     <li><a href="#contact-sec">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+  </div>
+
+<!--NAVBAR SECTION END-->
+{% endblock %} 
+{% block js_head %}
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts --> 
+    <script src="assets/js/jquery.flexslider.js"></script>
+     <!--  Scrolling Reveal Script -->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts --> 
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts --> 
+    <script src="assets/js/custom.js"></script>
+ {% endblock %}        
+</body>
+</html>   

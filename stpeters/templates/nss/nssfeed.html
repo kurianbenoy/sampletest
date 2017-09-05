@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Feed PAGE
+{% endblock %}
+
+{% block body %}
+
+	{% for i in data %}
+		{{i.title}}
+		</br>
+		{{i.description}}
+	{% endfor %}
+	
+{% endblock %}
