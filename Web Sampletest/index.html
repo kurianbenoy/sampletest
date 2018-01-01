@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name ="viewport" 
+	content = "width=device-width,initial-scale=1,shrink-to-fit=no">
+	<title>Contact ME</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="home">
+
+<div class ="wrapper">
+	<div class="one">
+		<h3 class="heading">Contact US</h4>
+	</div>
+		<div class="contact_form">
+		  <form >
+		    <label for="name">Name</label>
+		    <input type="text" id="name" name="firstname" placeholder="NAME">
+
+		    <label for="email">Email Address</label>
+		    <input type="text" id="email" name="lastname" placeholder="Email Adress">
+
+
+		    <label for="phone">Phone Number</label>
+		    <input type="text" id="phone" name="lastname" placeholder="Mobile Phone">
+
+		    <label for="country">Country</label>
+		    <select id="country" name="country">
+		      <option value="australia">Australia</option>
+		      <option value="canada">Canada</option>
+		      <option value="usa">USA</option>
+		    </select>
+		    <div class='input'>
+	    	<label for="input3"><code>Describe Youself
+	    	</code></label>
+	    	<br>
+			  <textarea id="COMMENTS" rows=3></textarea>
+			</div>
+
+		    <input type="submit" value="Submit">
+		  </form>
+		</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.11.0/fetch.min.js"></script>
+	<script type="text/javascript">
+
+
+		fetch('https://httpbin.org/post',{
+			method: 'POST' ,
+			credentials: 'same-origin',
+			headers: {
+			    'Accept': 'application/json',
+			    'Content-Type': 'application/json'
+			  },
+			body : JSON.stringify({
+					name : document.getElementById('name').value,
+					email : document.getElementById('email').value,
+					phone : document.getElementById('phone').value,
+					country : document.getElementById('country').value,
+					comments : document.getElementById('COMMENTS').value
+			})
+		})
+		.then(function(response){
+			if(response.ok) {
+		    return response.blob();
+		  	}
+		  	  throw new Error('Network response was not ok.');
+		  // console.log(response.body[name]);
+		  console.log("response");
+		  console.log(response);
+			});
+		
+		
+
+	</script>
+	</body>	
+</html>
